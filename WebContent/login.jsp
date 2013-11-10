@@ -1,88 +1,49 @@
 <html>
 <head>
-<script type="text/javascript">
-	function validate() {
-		//alert("in validation method");
-		if (document.user.name.value == "") {
-			alert("Please provide your name!");
-			document.user.name.focus();
-			return false;
-		}
-		if (document.user.pwd.value == "") {
-			alert("Please provide your Password!");
-			document.user.pwd.focus();
-			return false;
-		}
-		return true;
-	}
-	
-</script>
-<p>Click the button to display what day it is today.</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction()
-{
-var x;
-var d=new Date().getDay();
-switch (d)
-  {
-  case 0:
-    x="Today it's Sunday";
-    break;
-  case 1:
-    x="Today it's Monday";
-    break;
-  case 2:
-    x="Today it's Tuesday";
-    break;
-  case 3:
-    x="Today it's Wednesday";
-    break;
-  case 4:
-    x="Today it's Thursday";
-    break;
-  case 5:
-    x="Today it's Friday";
-    break;
-  case 6:
-    x="Today it's Saturday";
-    break;
-  }
-document.getElementById("demo").innerHTML=x;
-}
-</script>
-
+<head>
+      <link href="css/bootstrap.min.css" rel="stylesheet"/>
+      <link href="css/bootstrap-responsive.css" rel="stylesheet"/>
+      <script src="js/bootstrap.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-	<form name="user" action="login" method="post"
-		onsubmit="return(validate());">
-		<table bgcolor="E0E0E0" cellspacing="2" cellpadding="2">
-			<tr>
-				<td>Name</td>
-				<td>:</td>
-				<td><input type="text" name="name" /></td>
-			</tr>
-			<tr>
-				<td>Password</td>
-				<td>:</td>
-				<td><input type="password" name="pwd" /></td>
-			</tr>
-			<tr>
-				<td colspan="3" align="center"><input type="hidden"
-					name="action" value="login"> <input type="submit"
-					name="submit" value="login">&nbsp;&nbsp;&nbsp; <input
-					type="reset" name="reset" value="Reset"></td>
-			</tr>
-			<tr>
-				<td colspan="3" align="center"><a href="forgotpassword.jsp">ForgotPassword</a>&nbsp;&nbsp;&nbsp;
-					<a href="register.jsp">Register</a></td>
-			</tr>
-		</table>
+<div class="container">
+	<form name="user" action="login" method="post">
+		<div class="row">
+			<div class="form-group">
+				<div class="col-sm-10">
+				<label for="inputPassword3" class="col-sm-2 control-label">User Name</label>
+				<input type="text" class="form-control" placeholder="User Name">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		<div class="form-group">    		
+    		<div class="col-sm-10">
+    			<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+     			<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    		</div>
+ 		</div>		
+ 		</div>
+ 		<div class="row" style="cellpadding:5px;">
+ 		<div class="form-group">
+    		 <div class="col-sm-offset-2 col-sm-10">
+    			<input type="hidden"
+					name="action" value="login">
+      			<button type="submit" class="btn btn-primary">Sign in</button>
+      			<button type="reset" class="btn btn-primary">Reset</button>
+    		</div>    		
+  		</div>	
+  		</div>	
+  		<div class="row" style="cellpadding:10px" >
+    	<div class="form-group">
+    		 <div class="col-sm-offset-2 col-sm-10">
+    		<a href="forgotpassword.jsp" class="btn btn-primary">Forgot Password</a>
+    		<a href="register.jsp" class="btn btn-primary">Register</a>
+    		</div>
+  		</div>	
+  		</div>			
 	</form>
+	</div>
 </body>
 </html>
