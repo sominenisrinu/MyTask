@@ -75,7 +75,7 @@ public class StudentController extends HttpServlet {
 			RequestDispatcher rd = request
 					.getRequestDispatcher("login-error.jsp");
 
-			rd.forward(request, response);
+			rd.forward(request, response );
 		}
 
 	}
