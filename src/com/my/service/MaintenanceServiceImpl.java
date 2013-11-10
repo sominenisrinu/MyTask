@@ -254,7 +254,7 @@ public class MaintenanceServiceImpl implements MaintenanceService {
 		try {
 			conn = (Connection) DBconnection.getConnection();
 			Statement stmt = conn.createStatement();
-			ResultSet rSet = stmt.executeQuery("select * from branch");
+			ResultSet rSet = stmt.executeQuery("select * from branch ");
 			while (rSet.next()) {
 				Branch branch = new Branch();
 				branch.setCode(rSet.getString("code"));
