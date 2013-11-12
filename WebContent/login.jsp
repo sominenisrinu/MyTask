@@ -25,7 +25,7 @@
     		</div>
  		</div>		
  		</div>
- 		<div class="row" style="cellpadding:5px;">
+ 		<div class="row">
  		<div class="form-group">
     		 <div class="col-sm-offset-2 col-sm-10">
     			<input type="hidden"
@@ -35,8 +35,9 @@
     		</div>    		
   		</div>	
   		</div>	
-  		<div class="row" style="cellpadding:10px" >
-    	<div class="form-group">
+  		<br>
+  		<div class="row" >
+    	<div class="nav">
     		 <div class="col-sm-offset-2 col-sm-10">
     		<a href="forgotpassword.jsp" class="btn btn-primary">Forgot Password</a>
     		<a href="register.jsp" class="btn btn-primary">Register</a>
