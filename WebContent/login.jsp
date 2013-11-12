@@ -1,13 +1,10 @@
+<%@include file="header.jsp" %>
 <html>
 <head>
-<head>
-      <link href="css/bootstrap.min.css" rel="stylesheet"/>
-      <link href="css/bootstrap-responsive.css" rel="stylesheet"/>
-      <script src="js/bootstrap.js"></script>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div class="container">
+<div class="container" style="height: 75%;">
 	<form name="user" action="login" method="post">
 		<div class="row">
 			<div class="form-group">
@@ -48,3 +45,4 @@
 	</div>
 </body>
 </html>
+<%@include file="footer.jsp" %>
